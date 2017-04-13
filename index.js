@@ -82,7 +82,7 @@ app.post('/webhook/', function (req, res) {
 
 function start(id) {
   if (count == 1) {
-    sendTextMessage(id, 'Please enter your full name');
+    sendTextMessage(id, 'Hello! Welcome, In order to get Quote we would need some of your Information. To start with, Please enter your full name');
   } else if (count == 3 ) {
   	let messageData = {
 		"attachment": {
@@ -223,7 +223,6 @@ function start(id) {
 }
 // recommended to inject access tokens as environmental variables, e.g.
 var token = '';
-//const token = "EAAQ45JoFChABAM5BwwqpjJuYT4xW1gX0LZC4TA6HV44hGGUQdcIGKZBfS16mIstVWx0VjL02oKa4ZBC26wn9ZCAT1Wj6HhMHCZCNZCgznSt2RYglWSgNPiHk2IbzokxqlCZBtrmGZC7S3xEuOXCjf19UW3oMlqO5BWMSZC91Fk0qGLlznEpgsMGNb";
 
 function greetingText() {
 	request({
